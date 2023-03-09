@@ -1,0 +1,12 @@
+<h1>Angular Widget Searchbar</h1>
+<div class="row">
+  <div class="col">
+    <widget-searchbar
+      [debounce]="1000"
+      (valueChange)="searchEvent($event)"
+      (valueFocusOutChange)="searchEvent($event)"
+      (valueKeyEnterChange)="searchEvent($event)"
+      id="search"
+    ></widget-searchbar>
+  </div>
+</div>

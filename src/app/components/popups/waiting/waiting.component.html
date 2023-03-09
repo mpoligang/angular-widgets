@@ -1,0 +1,14 @@
+<h1>Angular Waiting Widget</h1>
+<div class="button">
+  <widget-button
+    outline="true"
+    required="true"
+    size="sm"
+    id="showValue"
+    label="Waiting"
+    style="margin-right: 1rem;"
+    (click)="loadWaiting()"
+  ></widget-button>
+</div>
+
+<widget-waiting [show]="show" src="./assets/load.svg" #wait></widget-waiting>

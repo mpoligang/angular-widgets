@@ -1,0 +1,77 @@
+<h1>Angular Modal Dialog</h1>
+<div style="display: flex;">
+  <div>
+    <widget-button
+      (click)="openModal(null)"
+      label="medium"
+      type="2"
+      outline="true"
+    ></widget-button>
+  </div>
+  <div style="margin-left: 1rem;">
+    <widget-button
+      (click)="openModal(enumSize.LG)"
+      label="large"
+      type="2"
+      outline="true"
+    ></widget-button>
+  </div>
+  <div style="margin-left: 1rem;">
+    <widget-button
+      (click)="openModal(enumSize.XL)"
+      label="extralarge"
+      type="2"
+      outline="true"
+    ></widget-button>
+  </div>
+  <div style="margin-left: 1rem;">
+    <widget-button
+      (click)="openModal(null, true)"
+      label="fullscreen"
+      type="2"
+      outline="true"
+    ></widget-button>
+  </div>
+  <div style="margin-left: 1rem;">
+    <widget-button
+      (click)="openCustomHeaderModal()"
+      label="custom header"
+      type="2"
+      outline="true"
+    ></widget-button>
+  </div>
+</div>
+
+<widget-modal-dialog [mobile]="mobile" title="Title" [size]="size" #modal>
+  <div
+    slot="modalFooter"
+    style="display: flex; justify-content: flex-end; width: 100%;"
+  >
+    <div style="margin-left: 1rem;">
+      <widget-button label="CONFERMA" type="2" outline="true"></widget-button>
+    </div>
+    <div style="margin-left: 1rem;">
+      <widget-button label="ANNULLA" type="2" outline="true"></widget-button>
+    </div>
+  </div>
+</widget-modal-dialog>
+
+<widget-modal-dialog [customHeader]="true" #customHeader>
+  <div slot="modalHeader">
+    <img
+      style="height: 2rem; width: 100%;"
+      src="https://www.aviontourism.com/images/1920-900-fix/9a3b50c6-5e91-426e-818d-983d7b77c603"
+    />
+  </div>
+  <div
+    slot="modalFooter"
+    style="display: flex; justify-content: flex-end; width: 100%;"
+  >
+    <div style="margin-left: 1rem;">
+      <widget-button label="CONFERMA" type="2" outline="true"></widget-button>
+    </div>
+    <div style="margin-left: 1rem;">
+      <widget-button label="ANNULLA" type="2" outline="true"></widget-button>
+    </div>
+  </div>
+</widget-modal-dialog>

@@ -1,0 +1,271 @@
+<div class="container-buttons">
+  <h4>Primary buttons</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="1"
+        label="Primary"
+        id="invia"
+        [rounded]="false"
+        [outline]="false"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled"
+        type="1"
+        disabled="true"
+        outline="false"
+        rounded="false"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<div class="container-buttons">
+  <h4>Secondary buttons</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="2"
+        label="Secondary"
+        id="invia"
+        [rounded]="false"
+        [outline]="false"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled"
+        type="2"
+        disabled="true"
+        outline="false"
+        rounded="false"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<div class="container-buttons">
+  <h4>Primary Outline</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="1"
+        label="Primary"
+        id="invia"
+        [rounded]="false"
+        [outline]="true"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled"
+        type="1"
+        disabled="true"
+        outline="true"
+        rounded="false"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<div class="container-buttons">
+  <h4>Secondary Outline</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="2"
+        label="Primary"
+        id="invia"
+        [rounded]="false"
+        [outline]="true"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled"
+        type="2"
+        disabled="true"
+        outline="true"
+        rounded="false"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<div class="container-buttons">
+  <h4>Primary rounded</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="1"
+        label="Primary rounded"
+        id="invia"
+        [rounded]="true"
+        [outline]="false"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled rounded"
+        type="1"
+        disabled="true"
+        outline="false"
+        rounded="true"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<div class="container-buttons">
+  <h4>Secondary rounded outline</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="2"
+        label="Secondary runded"
+        id="invia"
+        [rounded]="true"
+        [outline]="false"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled rounded"
+        type="2"
+        disabled="true"
+        outline="false"
+        rounded="true"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<div class="container-buttons">
+  <h4>Primary rounded</h4>
+  <div class="row-buttons">
+    <div class="button">
+      <widget-button
+        type="1"
+        label="Primary rounded outline"
+        id="invia"
+        [rounded]="true"
+        [outline]="true"
+      ></widget-button>
+    </div>
+    <div class="button">
+      <widget-button
+        label="disabled rounded outline"
+        type="1"
+        disabled="true"
+        outline="true"
+        rounded="true"
+      >
+      </widget-button>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="App">
+  <div class="container-buttons">
+    <h4>Primary buttons</h4>
+    <div class="row-buttons">
+      <div class="button">
+        <widget-button label="default" size="md" type="1" disabled="false"
+        outline="false" rounded="false" click="alert("Clicked!")" > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="disabled" size="md" type="1" disabled="true"
+        outline="false" rounded="false" click="alert("Clicked!")" > </widget-button>
+      </div>
+    </div>
+  </div>
+  <div class="container-buttons">
+    <h4>Secondary buttons</h4>
+    <div class="row-buttons">
+      <div class="button">
+        <widget-button label="default" size="md" type="2" disabled="false"
+        outline="false" rounded="false" click="alert("Clicked!")" > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="disabled" size="md" type="2" disabled="true"
+        outline="false" rounded="false" click="alert("Clicked!")" > </widget-button>
+      </div>
+    </div>
+  </div>
+  <div class="container-buttons">
+    <h4>Outlined buttons</h4>
+    <div class="row-buttons">
+      <div class="button">
+        <widget-button label="primary" size="md" type="1" disabled="false"
+        outline="true" rounded="false" click="alert("Clicked!")" > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="secondary" size="md" type="2" disabled="false"
+        outline="true" rounded="false" click="alert("Clicked!")" > </widget-button>
+      </div>
+    </div>
+  </div>
+  <div class="container-buttons">
+    <h4>Rounded buttons</h4>
+    <div class="row-buttons">
+      <div class="button">
+        <widget-button label="primary" size="md" type="1" disabled="false"
+        outline="false" rounded="true" click="alert("Clicked!")" > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="secondary" size="md" type="2" disabled="false"
+        outline="false" rounded="true" click="alert("Clicked!")" > </widget-button>
+      </div>
+    </div>
+  </div>
+  <div class="container-buttons">
+    <h4>Outlined and rounded buttons</h4>
+    <div class="row-buttons">
+      <div class="button">
+        <widget-button label="primary" size="md" type="1" disabled="false"
+        outline="true" rounded="true" click="alert("Clicked!")" > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="secondary" size="md" type="2" disabled="false"
+        outline="true" rounded="true" click="alert("Clicked!")" > </widget-button>
+      </div>
+    </div>
+  </div>
+  <div class="container-buttons">
+    <h4>Sizes</h4>
+    <div class="row-buttons">
+      <div class="button">
+        <widget-button label="small" size="sm" type="1" click="
+        alert("Clcked!")} > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="medium" size="md" type="1" click="
+        alert("Clcked!")} > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="large" size="lg" type="1" click="
+        alert("Clcked!")} > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="small" size="sm" type="2" click="
+        alert("Clcked!")} > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="medium" size="md" type="2" click="
+        alert("Clcked!")} > </widget-button>
+      </div>
+      <div class="button">
+        <widget-button label="large" size="lg" type="2" click="
+        alert("Clcked!")} > </widget-button>
+      </div>
+    </div>
+  </div>
+</div> -->

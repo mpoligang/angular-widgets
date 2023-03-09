@@ -1,0 +1,54 @@
+<h1>Angular Input Float Widget</h1>
+<widget-input-float
+  #inputText
+  [required]="true"
+  [readonly]="readonly"
+  name="text"
+  id="widget"
+  [disabled]="disabled"
+  label="Input text"
+  [minValue]="3.1"
+  [maxValue]="10.5"
+  [validationMsg]="validationsMsg"
+  (valueChange)="valueChange($event)"
+></widget-input-float>
+
+<div class="button">
+  <div style="margin-top: 1rem;">
+    <widget-button
+      outline="true"
+      required="true"
+      size="sm"
+      id="showValue"
+      label="show value"
+      style="margin-right: 1rem;"
+      (click)="showValue()"
+    ></widget-button>
+    <widget-button
+      outline="true"
+      size="sm"
+      id="disabled"
+      (click)="disabledAction()"
+      label="Disabled"
+      style="margin-right: 1rem;"
+    ></widget-button>
+
+    <widget-button
+      outline="true"
+      size="sm"
+      id="readonly"
+      label="read only"
+      (click)="readonlyAction()"
+      style="margin-right: 1rem;"
+    ></widget-button>
+
+    <widget-button
+      outline="true"
+      size="sm"
+      id="validation"
+      label="Validation"
+      style="margin-right: 1rem;"
+      (click)="validationAction()"
+    ></widget-button>
+  </div>
+</div>

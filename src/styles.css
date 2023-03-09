@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap");
+
+body,
+html {
+  font-family: "Work Sans";
+}
+.container-input {
+  width: 500px;
+}
+.container-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1rem 0;
+}
+.container-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.row-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.button {
+  margin-right: 1rem;
+}
